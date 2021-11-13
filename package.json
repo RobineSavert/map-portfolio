@@ -1,0 +1,21 @@
+{
+  "name": "map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./assets/css/tailwind.scss -o public/css/tailwindoutput.css",
+    "watch": "postcss ./assets/css/tailwind.scss -o public/css/tailwindoutput.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "rfs": "^9.0.6",
+    "tailwindcss": "^2.2.19"
+  }
+}

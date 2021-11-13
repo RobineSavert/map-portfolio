@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./fonts.scss";
+
+button {
+  @apply rounded-full bg-gray-900 text-center py-2 px-4 text-white;
+}
+
+.header {
+  @apply text-gray-600 hover:text-gray-900 2xl:text-gray-200 2xl:hover:text-gray-50;
+  nav {
+    @apply text-green-600;
+  }
+}
