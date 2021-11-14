@@ -1,4 +1,5 @@
-function openPopover(event, tooltipID) {
+function openPopover(event, tooltipID, position) {
+    console.log(position);
     let element = event.target;
     while (element.nodeName !== "BUTTON") {
         element = element.parentNode;
@@ -7,7 +8,7 @@ function openPopover(event, tooltipID) {
         element,
         document.getElementById(tooltipID),
         {
-            placement: "top",
+            placement: position,
         }
     );
     document.getElementById(tooltipID).classList.toggle("hidden");
